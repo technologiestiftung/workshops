@@ -292,16 +292,16 @@ void do_send(osjob_t* j){
 //*** (nicht entkommentieren, dieser Block  ist javascript, das die Arduino-IDE nicht versteht):***
     // der Temperaturwert kann auch negativ sein. Ob er negativ ist, steht in payloadA(3) (wenn=0 ist er positiv, wenn er negativ ist, ist er 255)
     // in der TTN-Konsole decodieren wir das später so:
-    //function Decoder(bytes) {
-    //var decoded_tsbid = (bytes[0]<<8) | bytes[1] ;
-    //var temp_vorzeichen = (bytes[2]<<24>>16) ;
-    //var temp_wert = (bytes[3]) ;
-    //var temp = temp_vorzeichen + temp_wert ; 
-    //return {
-    //  Id: decoded_tsbid ,
-    //  Temperatur: temp ,
-    //};
-    //}
+    /*function Decoder(bytes) {
+    var decoded_tsbid = (bytes[0]<<8) | bytes[1] ;
+    var temp_vorzeichen = (bytes[2]<<24>>16) ;
+    var temp_wert = (bytes[3]) ;
+    var temp = temp_vorzeichen + temp_wert ; 
+    return {
+      Id: decoded_tsbid ,
+      Temperatur: temp ,
+    };
+    }*/
     //*** mit den Feldnamen Id und Temperatur können dann die Werte bei TTN abgeholt / ausgelesen werden**
 //***********ENDE Decodierblock in javascript ************************************************
 
