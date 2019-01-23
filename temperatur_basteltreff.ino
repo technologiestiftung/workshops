@@ -38,14 +38,17 @@
 // Die Schlüssel liefert TTN bei Anmeldung über ABP
 // TTN-Konsole Anwendung anlegen, device anlegen, Settings, ABP, generiert Schlüssel und Device-ID
 
-// Syntaxbeispiel:  static const u1_t NWKSKEY[16] = { 0x6D, 0x40, 0x9D, 0x04, 0xE1, 0x29, 0x35, 0x17, 0x1D, 0xB7, 0x0D, 0x07, 0xED, 0xE3, 0xC5, 0xAD }; zu finden in TTN | Console | Application | device | overview
+// Syntaxbeispiel:  static const u1_t NWKSKEY[16] = { 0x6D, 0x40, 0x9D, 0x04, 0xE1, 0x29, 0x35, 0x17, 0x1D, 0xB7, 0x0D, 0x07, 0xED, 0xE3, 0xC5, 0xAD }; 
+// Euer Schlüssel ist zu finden in TTN | Console | Application | device | overview (MSB-Ansicht ist kopierbar)
  static const u1_t NWKSKEY[16] = { 0x6D, 0x40, 0x9D, 0x04, 0xE1, 0x29, 0x35, 0x17, 0x1D, 0xB7, 0x0D, 0x07, 0xED, 0xE3, 0xC5, 0xAD };
  
-// Syntaxbeispiel: static const u1_t APPSKEY[16] = { 0x99, 0x79, 0x1E, 0x44, 0x22, 0x5A, 0x47, 0x1F, 0x04, 0x56, 0xFA, 0xF9, 0x55, 0xBA, 0xC8, 0xF4 }; zu finden in TTN | Console | Application | device | overview
+// Syntaxbeispiel: static const u1_t APPSKEY[16] = { 0x99, 0x79, 0x1E, 0x44, 0x22, 0x5A, 0x47, 0x1F, 0x04, 0x56, 0xFA, 0xF9, 0x55, 0xBA, 0xC8, 0xF4 }; 
+// Euer Schlüssel ist zu finden in TTN | Console | Application | device | overview
  static const u1_t APPSKEY[16] = { 0x99, 0x79, 0x1E, 0x44, 0x22, 0x5A, 0x47, 0x1F, 0x04, 0x56, 0xFA, 0xF9, 0x55, 0xBA, 0xC8, 0xF4 };
 
 // ACHTUNG DEVICE ADRESSE MIT PRÄFIX 0x eingeben
-// Syntaxbeispiel:  static const u4_t DEVADDR = 0X26011FB4; zu finden in TTN | Console | Application | device | overview | Device Adress
+// Syntaxbeispiel:  static const u4_t DEVADDR = 0X26011FB4; 
+// Euer Schlüssel ist zu finden in TTN | Console | Application | device | overview | Device Adress
 
  static const u4_t DEVADDR = 0X26011FB4;
 
@@ -54,6 +57,7 @@
 int id = 3; // zusätzliche ID, die vom Node gesendet wird
 
 //****************************************
+
 
 
 
@@ -254,22 +258,13 @@ void do_send(osjob_t* j){
      //******* stehen aber in der Funktion readtemp, weil es bei vielen Funktionalitäten  ** 
      //********übersichtlicher wird, die Funktionen in eigene Blöcke zu schreiben. *************
    
-          readtemp(); //rufe die gesondert notierte Auslesefunktion (weiter unten) auf
+     readtemp(); //rufe die gesondert notierte Auslesefunktion (weiter unten) auf
 
-     //    temperatur= 256; // wer hier für Testzwecke manuell Temperaturen setzt, muss die Zeile davor auskommentieren.
 
- 
-//**********/Daten bearbeiten, Daten putzen   ************
- 
-    if (temperatur>=127) //Wenn der Wert für die Temperatur über oder gleich 127 ist, dann…
-    {
-    temperatur = 127; //…setze Wert auf 127. Der Messebereich des Sensors liegt zw. -50 und 127.
-    }
-
-    if (temperatur<=-50) //Wenn der Wert für die Temperatur kleiner oder gleich -50 ist, dann…
-    {
-    temperatur = -50; //…setze Wert auf -50.
-    }
+ // Nachstehende auskommentierte Funktion wieder einschalten, wenn ihr eine offline-Kontrolle für
+ // die Messung braucht.    
+ // piezoschalten(); //rufe die Funktion auf, die ab 30° piepst oder leuchtet
+    
 
  
  
@@ -292,16 +287,16 @@ void do_send(osjob_t* j){
 //*** (nicht entkommentieren, dieser Block  ist javascript, das die Arduino-IDE nicht versteht):***
     // der Temperaturwert kann auch negativ sein. Ob er negativ ist, steht in payloadA(3) (wenn=0 ist er positiv, wenn er negativ ist, ist er 255)
     // in der TTN-Konsole decodieren wir das später so:
-    /*function Decoder(bytes) {
-    var decoded_tsbid = (bytes[0]<<8) | bytes[1] ;
-    var temp_vorzeichen = (bytes[2]<<24>>16) ;
-    var temp_wert = (bytes[3]) ;
-    var temp = temp_vorzeichen + temp_wert ; 
-    return {
-      Id: decoded_tsbid ,
-      Temperatur: temp ,
-    };
-    }*/
+    //function Decoder(bytes) {
+    //var decoded_tsbid = (bytes[0]<<8) | bytes[1] ;
+    //var temp_vorzeichen = (bytes[2]<<24>>16) ;
+    //var temp_wert = (bytes[3]) ;
+    //var temp = temp_vorzeichen + temp_wert ; 
+    //return {
+    //  Id: decoded_tsbid ,
+    //  Temperatur: temp ,
+    //};
+    //}
     //*** mit den Feldnamen Id und Temperatur können dann die Werte bei TTN abgeholt / ausgelesen werden**
 //***********ENDE Decodierblock in javascript ************************************************
 
@@ -320,7 +315,6 @@ void do_send(osjob_t* j){
         Serial.println(F("ID wird gesendet...")); //und geben etwas auf den Monitor aus, damit wir eine Kontrollmöglichkeit haben
         Serial.print(temperatur); // Nun wird der Wert „temperatur“ über die serielle Kommunikation an den PC gesendet. Durch öffnen des seriellen Monitors in der Arduino-Software kann die Temperatur abgelesen werden.
         Serial.println(" Grad Celsius"); // Im seriellen Monitor wird hinter der Temperatur die Einheit eingeblendet.
-        piezoschalten(); //rufe die Funktion auf, die ab 30° piepst oder leuchtet
 
  
  //***** nachstehend: für debug-Zwecke kann man die Payload auch byteweise seriell ausgeben, hilft beim Test eines Decoders ******************   
@@ -356,6 +350,21 @@ void readtemp()
 {
     sensorwert=analogRead(TMP36); //Auslesen des Sensorwertes.
     temperatur= map(sensorwert, 0, 410, -50, 150); //Umwandeln des Sensorwertes mit Hilfe des "map" Befehls.
+
+//**********/Daten bearbeiten, Daten putzen   ************
+ 
+    if (temperatur>=127) //Wenn der Wert für die Temperatur über oder gleich 127 ist, dann…
+    {
+    temperatur = 127; //…setze Wert auf 127. Der Messebereich des Sensors liegt zw. -50 und 127.
+    }
+
+    if (temperatur<=-50) //Wenn der Wert für die Temperatur kleiner oder gleich -50 ist, dann…
+    {
+    temperatur = -50; //…setze Wert auf -50.
+    }
+
+//    temperatur= 256; // wer hier für Testzwecke manuell Temperaturen setzt, muss die Zeile davor auskommentieren.
+  
  }
 
 
