@@ -1,19 +1,9 @@
- // Dieses Beispiel testet die Kommunikation zwischen Lappi und Arduino, sonst nichts
+ // Dieses Beispiel testet die Kommunikation zwischen Lappi und Arduino sonst nichts
+
+ // Wenn euer Arduino damit penetrant die Zahl 25 auf dem seriellen Monitor ausgibt, ist alles richtig angeschlossen.
 
 
-// Uebersicht Programmteile:
-// includes, Definition von Konstanten und Variablen einschliesslich TTN-Schluessel und deren Uebergabe an LMIC, eigene Globals
-// void setup () wird einmal durchlaufen und konfiguriert z.B. Pinouts und die LMIC
-// void loop () wird als Schleife ausgeführt
-
-
-#include <lmic.h>
-#include <hal/hal.h>
-#include <SPI.h>
-
-// Globals
-
-int temperatur = 25; //Unter der Variablen "temperatur" wird später der Temperaturwert abgespeichert.
+int temperatur = 25; //
 
 
 

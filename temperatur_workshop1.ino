@@ -1,6 +1,12 @@
- // Beispiel: Temperatur eines Sensors ins TTN senden und zur Kontrolle einen Piezolautsprecher oder eine LED einschalten, wenn die Temperatur über 30° liegt
+ // Beispiel: Temperatur eines Sensors ins TTN senden 
  // benötigt: Arduino, Dragino-Shield (mit Antenne!!) Sensor TMP36 an Analogeingang0 und LED mit Vorwiderstand (!) an PIN 5 (oder Piezolautsprecher)
- // Zum Senden wird die Library LMIC genutzt. (Mitgeliefert, muss aber über die Arduino-IDE installiert werden)
+ // Zum Senden wird die Library LMIC genutzt. (Muss aber über die Arduino-IDE installiert werden, falls das nicht klappt, ist sie hier zu finden:
+ // https://github.com/matthijskooijman/arduino-lmic )
+
+// zusätzlich hier enthalten: zur Kontrolle einen Piezolautsprecher oder eine LED einschalten, wenn die Temperatur über 30° liegt, damit man auch
+// ohne Laptop mit seriellem Monitor prüfen kann, ob der Aufbau richtig misst. Wenn im TTN lauter "richtige" Werte ankommen, braucht man die nicht.
+// Einschalten dieser Funktion: Zeile 272 entkommentieren (alle nötigen Definitionen und Variablen sind im Code uns stören auch bei Nichtbenutzung
+// nicht, da der Code klein ist und auch mit ungenutzten Funktionen in den Speicher passt.
 
 // Aufbauhinweise Schaltung:
  
@@ -261,7 +267,7 @@ void do_send(osjob_t* j){
      readtemp(); //rufe die gesondert notierte Auslesefunktion (weiter unten) auf
 
 
- // Nachstehende auskommentierte Funktion wieder einschalten, wenn ihr eine offline-Kontrolle für
+ // Nachstehende auskommentierte Funktion wieder einschalten, wenn ihr eine offline-LED-Kontrolle für
  // die Messung braucht.    
  // piezoschalten(); //rufe die Funktion auf, die ab 30° piepst oder leuchtet
     
