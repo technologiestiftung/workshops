@@ -7,7 +7,11 @@ Der Arduino Uno (https://store.arduino.cc/arduino-uno-rev3) ist ein Mini-Compute
 * Version 2: Arduino Nano + NEO 6M GPS-Modul + Grove LCD 
 * Versio 3: Arduino Uno + LoRa GPS Shield with LoRa BEE (Datenübertragung über LoRaWan mögliche)
 
-Nachfolgend soll das Setup von Version 1 beschrieben werden
+Nachfolgend soll das Setup von Version 1 beschrieben werden.
+
+Aber zu aller erst sind wir einmal neugierig und wollen euch gerne zwei Fragen stellen.
+Wir würden uns sehr freuen, wenn ihr euch 2min Zeit nehmt und uns sagt, zu welchen Zwecken Eurer Meinung nach ein GPS-Tracker privat aber auch in einer Smart City genutzt werden kann und sollte. Wir werden versuchen Eure Antworten in kommenden Workshops zu berücksichtigen :)
+Hier geht's zum Fragen-Sheet: [Klick mich!] (https://github.com/technologiestiftung/workshops/blob/master/GetCreative.md)
 
 ## Version 1: GPS-Tracker mit kleinem OLED-Display
 
