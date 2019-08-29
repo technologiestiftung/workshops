@@ -42,5 +42,11 @@ Das OLED-Display wird über die Adafruit GFX Grpahics Library angesteuert und ka
 <img position="inline" height="280px" src="images/GPSTracker/OLED_Stripes.jpg">
 
 Ausführliches Erläuterungen zu den einzelen Funktionen findet Ihr hier: [im offiziellen Library Guide](https://learn.adafruit.com/adafruit-gfx-graphics-library?view=all). Darin wird u.a. erklärt, wie man Schriftfarbe, -Größe, und -Anordnung definiert und wie die Funktionen und deren Parameterübergabe prinzipiell genutzt werden können. 
+
 Möchte man eine Custom Font benutzen, kann man sich diese ebenso in den Präprozessor mit einer .h-Datei einbinden. Ein Auswahl der Custom-Fonts könnt Ihr euch [hier](https://learn.adafruit.com/pages/6656/elements/2002817/download) herunterladen.
 Für unseren GPS-Tracker haben wir kein Farbdisplay, sondern ein simples SW-Display genutzt.
+
+Eine asuwführliche Beschreibung wie das Display mit dem Arduino verkabelt werden muss, findet ihr hier: https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/. Nachfolgend ein Bild vom Schaltkreis.
+
+<img align="left" width="100%" src="images/GPSTracker/oled_arduino_verkabelung.jpg">
+
