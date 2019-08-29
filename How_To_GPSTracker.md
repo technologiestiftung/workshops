@@ -5,7 +5,7 @@
 Der Arduino Uno (https://store.arduino.cc/arduino-uno-rev3) ist ein Mini-Computer, der sich Dank der Arduino-Umgebung sehr leicht programmieren lässt. Wir haben den Arduino mit Hilfe von einem einem GPS-Modul, einem LCD bzw. OLED-Display und einem LoRa-Shield ein wenig Leben eingehaucht. Dabei haben wir insgesamt drei Versionen eines GPS-Trackers gebaut:
 * Version 1: Arduino Uno + NEO 6M GPS-Modul + 0.96" I2C OLED-Display
 * Version 2: Arduino Nano + NEO 6M GPS-Modul + Grove LCD 
-* Versio 3: Arduino Uno + LoRa GPS Shield with LoRa BEE (Datenübertragung über LoRaWan mögliche)
+* Versio 3: Arduino Uno + LoRa GPS Shield with LoRa BEE (Datenübertragung über LoRaWan möglich)
 
 Nachfolgend soll das Setup von Version 1 beschrieben werden.
 
@@ -49,4 +49,14 @@ Für unseren GPS-Tracker haben wir kein Farbdisplay, sondern ein simples SW-Disp
 Eine asuwführliche Beschreibung wie das Display mit dem Arduino verkabelt werden muss, findet ihr hier: https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/. Nachfolgend ein Bild vom Schaltkreis.
 
 <img align="left" width="100%" src="images/GPSTracker/oled_arduino_verkabelung.jpg">
+
+## Version 3: GPS-Tracker mit LoRa-Funktion
+
+HIER BILD
+
+LINK zum PDF
+
+LINK zu allen ext. LIBs
+
+LINK zum CODE
 
