@@ -11,7 +11,7 @@ Nachfolgend soll das Setup von Version 1 beschrieben werden
 
 ## Version 1: GPS-Tracker mit kleinem OLED-Display
 
-<img align="right" width="300px" src="images/GPSTracker/ArduinoUno_smOLED.jpg">
+<img align="right" width="400px" src="images/GPSTracker/ArduinoUno_smOLED.jpg">
 
 
 Welche Hardware man für diese Version benötigt:
