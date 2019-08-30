@@ -1,6 +1,6 @@
 # Bauanleitung GPS-Tracker
 
-<img align="top" width="100%" src="images/GPSTracker/Header_GPSTracker.jpg">
+<img align="top" width="100%" src="images/GPSTracker/Header_GPSTracker_new.jpg">
 
 Der Arduino Uno (https://store.arduino.cc/arduino-uno-rev3) ist ein Mini-Computer, der sich Dank der Arduino-Umgebung sehr leicht programmieren lässt. Wir haben den Arduino mit Hilfe von einem einem GPS-Modul, einem LCD bzw. OLED-Display und einem LoRa-Shield ein wenig Leben eingehaucht. Dabei haben wir insgesamt drei Versionen eines GPS-Trackers gebaut:
 * Version 1: Arduino Uno + NEO 6M GPS-Modul + 0.96" I2C OLED-Display
