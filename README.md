@@ -13,6 +13,8 @@ Die **Technologiestiftung Berlin** veranstaltet unter der Leitung des **CityLAB 
 
 In den sogenannten **HOW TOs** findet ihr eine ausführliche Anleitun zu den jeweiligen Workshops mit entsprechenden Bildern und verlinkungen zu Codes, Libaries, Anleitungen und weiterführenden Input. 
 
+
+&nbsp;
 <img align="center" width="100%" src="images/Werkstatt_Platzhalter.jpg">
 
 
