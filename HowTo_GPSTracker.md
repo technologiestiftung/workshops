@@ -43,7 +43,7 @@ Für unseren GPS-Tracker haben wir kein Farbdisplay, sondern ein simples SW-Disp
 
 <img align="right" width="300" src="images/GPSTracker/oled_arduino_verkabelung.jpg">
 
-Wer erst einmal nur mit dem Display warm werden möchte, der kann dieses auch einzeln an den Arduino anschließen. Eine asuwführliche Beschreibung wie das Display mit dem Arduino verkabelt werden muss, findet ihr hier: https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/. Nachfolgend ein Bild vom Schaltkreis.
+Wer erst einmal nur mit dem Display warm werden möchte, der kann dieses auch einzeln an den Arduino anschließen. Eine asuwführliche Beschreibung wie das Display mit dem Arduino verkabelt werden muss, findet ihr hier: https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/. Gut zu wissen: SCL (Serial Clock) transportiert das Taktsignal , während SDA (Serial Data) die Datenbits überträgt. Durch die Verwendung von I2C-Bussen, kann man das Display über nur (genau diesen) zwei Pins ansteuern.
 
 
 ## Version 2: GPS-Tracker mit LoRa-Funktion
