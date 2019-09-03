@@ -41,9 +41,10 @@ Ausführliches Erläuterungen zu den einzelen Funktionen der Library findet Ihr 
 Möchte man eine Custom Font benutzen, kann man sich diese ebenso in den Präprozessor mit einer .h-Datei einbinden. Ein Auswahl der Custom-Fonts könnt Ihr euch [hier](https://learn.adafruit.com/pages/6656/elements/2002817/download) herunterladen.
 Für unseren GPS-Tracker haben wir kein Farbdisplay, sondern ein simples SW-Display genutzt.
 
-Eine asuwführliche Beschreibung wie das Display mit dem Arduino verkabelt werden muss, findet ihr hier: https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/. Nachfolgend ein Bild vom Schaltkreis.
-
 <img align="right" width="300" src="images/GPSTracker/oled_arduino_verkabelung.jpg">
+
+Wer erst einmal nur mit dem Display warm werden möchte, der kann dieses auch einzeln an den Arduino anschließen. Eine asuwführliche Beschreibung wie das Display mit dem Arduino verkabelt werden muss, findet ihr hier: https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/. Nachfolgend ein Bild vom Schaltkreis.
+
 
 ## Version 2: GPS-Tracker mit LoRa-Funktion
 
