@@ -59,6 +59,7 @@ Wer erst einmal nur mit dem Display warm werden möchte, der kann dieses auch ei
 
 ## Version 2: GPS-Tracker mit LoRa-Funktion
 
+#### Hardware
 Welche Hardware man für diese version benötigt:
 * Arduino Nano Rev3 à 20€ (https://store.arduino.cc/arduino-uno-rev3)
 * Dragino LoRa/GPS-Shield mit LoRa Bee à 34€(https://www.exp-tech.de/module/wireless/funk/7767/dragino-lora/gps-shield-915)
@@ -66,6 +67,17 @@ Welche Hardware man für diese version benötigt:
 
 Der Gesamtpreis für die Hardware für GPS-Tracker Version 1 liegt damit bei **57 Euro**. Zugegeben, das klingt jetzt erst mal nach viel Geld. Für einen einfach, frustrfreien Einstieg in die LoRaWan-Tehmatik ist das Shield von Dragino jedoch sehr gut geeignet. Es kombiniert GPS-Modul + Antenne (sandfarbener Würfel) und LoRa Bee + Antenne (weißer Stab) und wird einfach auf den Arduino Uno aufsgeteckt. Man kann das Shield natürlich auch für weniger Geld aus den Eizelteilen nachbauen oedr gar LoRa-Modul und GPS-Modul einzeln mit den Arduino verkabeln. Diese Vorgehensweise beleuchten wir allerdings nicht.
 
+<img align="right" width="300" src="images/GPSTracker/Arduino_LoRa.jpg">
+
+#### Verkabelung
 Zur Verkabelung mit dem Arduino Uno benötigen wir lediglich zwei Kabel. **WICHTIG**: die Jumper von RX (Receive) und TX (Transmitter) müssen entfernt werden, damit ein Signal übertragen werden kann.
+
+#### Libraries
+* https://github.com/mikalhart/TinyGPS/releases/tag/v13 
+    * Anleitung hier: http://arduiniana.org/libraries/tinygps/
+* https://github.com/matthijskooijman/arduino-lmic
+    * Tipps hier: https://www.thethingsnetwork.org/forum/c/nodes/lmic
+
+Wir haben eine ausführliche Präsentation zum Aufbau dieses GPS-Trackers erstellt. Darin werden u.a. auch noch einmal die Grundlage zum TTN (The Thing Network) und der Verbindung mit dem LoRaWan erklärt. [Hier geht's zur Präsi!](https://github.com/technologiestiftung/workshops/tree/master/xx_GPSTracker_Pr%C3%A4si)
 
 
