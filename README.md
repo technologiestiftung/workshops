@@ -13,6 +13,8 @@ Die **Technologiestiftung Berlin** veranstaltet unter der Leitung des **CityLAB 
 
 In den sogenannten **HOW TOs** findet ihr eine ausführliche Anleitun zu den jeweiligen Workshops mit entsprechenden Bildern und verlinkungen zu Codes, Libaries, Anleitungen und weiterführenden Input. 
 
+
+&nbsp;
 ## Übersicht aller Workshops
 
 #### Workshop vom 30.08.2019 – GPS-Tracking & LoRaWAN mit dem Arduino TEIL 1/2
