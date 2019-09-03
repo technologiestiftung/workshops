@@ -2,16 +2,11 @@
 
 <img align="top" width="100%" src="images/GPSTracker/Header_GPSTracker_new.jpg">
 
-Der Arduino Uno (https://store.arduino.cc/arduino-uno-rev3) ist ein Mini-Computer, der sich Dank der Arduino-Umgebung sehr leicht programmieren lässt. Wir haben den Arduino mit Hilfe von einem einem GPS-Modul, einem LCD bzw. OLED-Display und einem LoRa-Shield ein wenig Leben eingehaucht. Dabei haben wir insgesamt drei Versionen eines GPS-Trackers gebaut:
-* Version 1: Arduino Uno + NEO 6M GPS-Modul + 0.96" I2C OLED-Display
-* Version 2: Arduino Nano + NEO 6M GPS-Modul + Grove LCD 
-* Versio 3: Arduino Uno + LoRa GPS Shield with LoRa BEE (Datenübertragung über LoRaWan möglich)
+Der Arduino Uno (https://store.arduino.cc/arduino-uno-rev3) ist ein Mini-Computer, der sich Dank der Arduino-Umgebung sehr leicht programmieren lässt. Es gibt verschiedene Ausführungen der Arduinos, wobei sich diese in den Anschlüssen, Pins, Baugröße, der Prozessorleistung uvm. unterscheiden. In dieser Bauanleitung haben wir den Arduino Uno bzw. den Arduino Nano mit Hilfe eines GPS-Moduls, eines LCD bzw. OLED-Displays und mit Hilfe eines LoRa-Shields ein wenig Leben eingehaucht. Dabei haben wir insgesamt zwei Versionen des GPS-Trackers gebaut:
+* **Version 1:** Arduino Nano + NEO 6M GPS-Modul mit Antenne + 0.96" I2C OLED-Display (keine Übertragung ins LoRaWan)
+* **Version 2:** Arduino Uno + aufgstecktes LoRa/GPS-Shield mit Xbee und GPS-Modul (Datenübertragung über LoRaWan möglich)
 
 Nachfolgend soll das Setup von Version 1 beschrieben werden.
-
-Aber zu aller erst sind wir einmal neugierig und wollen euch gerne zwei Fragen stellen.
-Wir würden uns sehr freuen, wenn ihr euch 2min Zeit nehmt und uns sagt, zu welchen Zwecken Eurer Meinung nach ein GPS-Tracker privat aber auch in einer Smart City genutzt werden kann und sollte. Wir werden versuchen Eure Antworten in kommenden Workshops zu berücksichtigen :)
-Hier geht's zum Fragen-Sheet: [Klick mich!](https://github.com/technologiestiftung/workshops/blob/master/GetCreative.md)
 
 ## Version 1: GPS-Tracker mit kleinem OLED-Display
 
