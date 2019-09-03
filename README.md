@@ -1,4 +1,4 @@
-<img align="right" width="200" src="images/citylab-logo-2160x550.jpg">
+<img align="right" width="200" margin-top="-2em" src="images/citylab-logo-2160x550.jpg">
 
 
 # Workshops
