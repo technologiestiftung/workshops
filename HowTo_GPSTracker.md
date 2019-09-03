@@ -72,7 +72,7 @@ Der Gesamtpreis für die Hardware für GPS-Tracker Version 1 liegt damit bei **5
 
 
 #### Verkabelung
-<img align="right" height="300" src="images/GPSTracker/Arduino_LoRa.png">
+<img align="right" height="320" src="images/GPSTracker/Arduino_LoRa.png">
 
 Zur Verkabelung mit dem Arduino Uno benötigen wir lediglich zwei Kabel. **WICHTIG**: die Jumper von RX (Receive) und TX (Transmitter) müssen entfernt werden, damit ein Signal übertragen werden kann.
 
@@ -82,6 +82,7 @@ Zur Verkabelung mit dem Arduino Uno benötigen wir lediglich zwei Kabel. **WICHT
 * https://github.com/matthijskooijman/arduino-lmic
     * Tipps hier: https://www.thethingsnetwork.org/forum/c/nodes/lmic
 
-Wir haben eine ausführliche Präsentation zum Aufbau dieses GPS-Trackers erstellt. Darin werden u.a. auch noch einmal die Grundlage zum TTN (The Thing Network) und der Verbindung mit dem LoRaWan erklärt. [Hier geht's zur Präsi!](https://github.com/technologiestiftung/workshops/tree/master/xx_GPSTracker_Pr%C3%A4si)
+Wir haben eine ausführliche Präsentation zum Aufbau dieses GPS-Trackers erstellt. Darin werden u.a. auch noch einmal die Grundlage zum TTN (The Thing Network) und der Verbindung mit dem LoRaWan erklärt.
+[Hier geht's zur Präsi!](https://github.com/technologiestiftung/workshops/tree/master/xx_GPSTracker_Pr%C3%A4si)
 
 
