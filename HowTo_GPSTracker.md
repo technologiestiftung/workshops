@@ -89,6 +89,7 @@ Zur Verkabelung mit dem Arduino Uno benötigen wir lediglich zwei Kabel.
 **[Hier geht's zum Code](https://github.com/technologiestiftung/workshops/blob/master/codes_sketches/GPSTracker_LoRa_Uno_V2.ino)**
 
 Wir haben eine ausführliche Präsentation zum Aufbau dieses GPS-Trackers erstellt. Darin werden u.a. auch noch einmal die Grundlage zum TTN (The Thing Network) und der Verbindung mit dem LoRaWan erklärt.  
-[Hier geht's zur Präsi!](https://github.com/technologiestiftung/workshops/tree/master/xx_GPSTracker_Pr%C3%A4si)
+
+**[Hier geht's zur Präsi!](https://github.com/technologiestiftung/workshops/tree/master/xx_GPSTracker_Pr%C3%A4si)**
 
 
