@@ -1,4 +1,4 @@
-<img align="right" width="200px" src="images/citylab-logo-2160x550.jpg">
+<img align="right" width="200" src="images/citylab-logo-2160x550.jpg">
 
 # Workshops
 Die **Technologiestiftung Berlin** veranstaltet unter der Leitung des **CityLAB Berlin** in regelmäßigen Abständen Workshops im CityLAB Berlin. Die Termine für die sog. **Offene Werkstatt** können hier eingesehen werden: [CityLAB Microsite](https://www.citylab-berlin.org/)
