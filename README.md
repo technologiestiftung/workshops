@@ -5,13 +5,13 @@
 # Workshops
 Die **Technologiestiftung Berlin** veranstaltet unter der Leitung des **CityLAB Berlin** in regelmäßigen Abständen Workshops im CityLAB Berlin. Die Termine für die sog. **Offene Werkstatt** können hier eingesehen werden: [CityLAB Microsite](https://www.citylab-berlin.org/)
 
-In den sogenannten **HOW TOs** findet ihr eine ausführliche Anleitun zu den jeweiligen Workshops mit entsprechenden Bildern und verlinkungen zu Codes, Libaries, Anleitungen und weiterführenden Input. 
-
 ### In diesem Repository findet ihr:
 * HOW TO Anleitungen zu den einzelnen Workshops
 * Programmcodes zu den Workshops
 * Images zu den Workshops
 * weiterführende Materialien
+
+In den sogenannten **HOW TOs** findet ihr eine ausführliche Anleitun zu den jeweiligen Workshops mit entsprechenden Bildern und verlinkungen zu Codes, Libaries, Anleitungen und weiterführenden Input. 
 
 ## Übersicht aller Workshops
 
