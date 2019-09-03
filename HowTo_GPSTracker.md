@@ -27,7 +27,7 @@ Der Gesamtpreis für die Hardware für GPS-Tracker Version 1 liegt damit bei **3
 #### Verkabelung
 Die einzelnen Hardware-Komponenten müssen wie folgt miteinander verkabelt werden. Für die Stromversorgung haben wir uns in unserem Schaltplan für eine 9V Batterie entschieden, das Board kann aber auch ohne Probleme mit dem Mini-USB-Kabel per Computer versorgt werden.
 
-<img align="right" width="100%" src="images/GPSTracker_Nano_Schaltplan.png">
+<img align="right" width="100%" src="images/GPSTracker/GPSTracker_Nano_Schaltplan.png">
 
 #### Libraries
 Jedes einzelne Modul bzw. jede einzelne Hardware-Komponente, wie bspw. Display, GPS-Sensor etc., muss natürlich irgendwie über den Arduino angesteuert werden. Demnach benötogt man für bestimmte Module auch bestimmte Libraries, die in den Programmcode in den Präprozessor (also ganz am Anfang des Codes) durch das Schlüsselwort #include eingebunden werden müssen. Für diese Version haben wir 3 zusützliche Libraries eingebunden, die nicht per default über Arduino bereitgestellt werden. Das sind:
