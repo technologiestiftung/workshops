@@ -27,7 +27,7 @@ Der Gesamtpreis für die Hardware für GPS-Tracker Version 1 liegt damit bei **3
 #### Verkabelung
 Die einzelnen Hardware-Komponenten müssen wie folgt miteinander verkabelt werden. Für die Stromversorgung haben wir uns in unserem Schaltplan für eine 9V Batterie entschieden, das Board kann aber auch ohne Probleme mit dem Mini-USB-Kabel per Computer versorgt werden.
 
-<img align="right" width="100%" src="images/GPSTracker_Nano_Schaltplan.png">
+<img align="right" width="100%" src="images/GPSTracker/GPSTracker_Nano_Schaltplan.png">
 
 #### Libraries
 Jedes einzelne Modul bzw. jede einzelne Hardware-Komponente, wie bspw. Display, GPS-Sensor etc., muss natürlich irgendwie über den Arduino angesteuert werden. Demnach benötogt man für bestimmte Module auch bestimmte Libraries, die in den Programmcode in den Präprozessor (also ganz am Anfang des Codes) durch das Schlüsselwort #include eingebunden werden müssen. Für diese Version haben wir 3 zusützliche Libraries eingebunden, die nicht per default über Arduino bereitgestellt werden. Das sind:
@@ -35,7 +35,10 @@ Jedes einzelne Modul bzw. jede einzelne Hardware-Komponente, wie bspw. Display, 
 * https://github.com/adafruit/Adafruit_SSD1306
 * https://github.com/mikalhart/TinyGPSPlus (im Ordner src)
 
+#### Code aka. Sketch
+Nach dem Setup der Hardware, muss nun mit Hilfe der Arduino-IDE ein Sketch (Sketch == Code == Programm) auf das Arduino-Board geladen werden. Dazu schließt man den Arduino vie Mini-USB an seinen Client (Client == Rechner == Laptop) an und öffnet die Arduino IDE (Download der Arduino-IDE [auf der offiziellen Website](https://www.arduino.cc/en/main/software)). In der IDE (Integrated Development Environment aka. Integrierte Entwicklungsumgebung) schreibt man das Sketch für den Mikrocontroller und lädt es schließlich auf das Board.
 
+**Wichtig**: damit das Sketch auf das Board geladen werden kann, muss zunächst das richtige Board (Arduino Nano) und der richtige Port (incoming USB-POrt) ausgewählt werden. Ihr könnt beide Einstellungem im Menüband unter "Tools" überprüfen und anpassen.
 
 Untder dem nachfolgendem Link, findet ihr eine ähnliche Bauanleitung mit gleichen Hardware-Komponenten. Der Autor hat in diesem Fall mit das Display sehr gut mit Hilfe der dtostrf-Funktion gestaltet: https://robotzero.one/arduino-neo-gps-oled/
 Die dtostrf-Funktion erklärt: https://www.mikrocontroller.net/topic/86391
@@ -59,6 +62,7 @@ Wer erst einmal nur mit dem Display warm werden möchte, der kann dieses auch ei
 
 ## Version 2: GPS-Tracker mit LoRa-Funktion
 
+#### Hardware
 Welche Hardware man für diese version benötigt:
 * Arduino Nano Rev3 à 20€ (https://store.arduino.cc/arduino-uno-rev3)
 * Dragino LoRa/GPS-Shield mit LoRa Bee à 34€(https://www.exp-tech.de/module/wireless/funk/7767/dragino-lora/gps-shield-915)
@@ -66,6 +70,18 @@ Welche Hardware man für diese version benötigt:
 
 Der Gesamtpreis für die Hardware für GPS-Tracker Version 1 liegt damit bei **57 Euro**. Zugegeben, das klingt jetzt erst mal nach viel Geld. Für einen einfach, frustrfreien Einstieg in die LoRaWan-Tehmatik ist das Shield von Dragino jedoch sehr gut geeignet. Es kombiniert GPS-Modul + Antenne (sandfarbener Würfel) und LoRa Bee + Antenne (weißer Stab) und wird einfach auf den Arduino Uno aufsgeteckt. Man kann das Shield natürlich auch für weniger Geld aus den Eizelteilen nachbauen oedr gar LoRa-Modul und GPS-Modul einzeln mit den Arduino verkabeln. Diese Vorgehensweise beleuchten wir allerdings nicht.
 
+
+#### Verkabelung
+<img align="right" width="300" src="images/GPSTracker/Arduino_LoRa.jpg">
+
 Zur Verkabelung mit dem Arduino Uno benötigen wir lediglich zwei Kabel. **WICHTIG**: die Jumper von RX (Receive) und TX (Transmitter) müssen entfernt werden, damit ein Signal übertragen werden kann.
+
+#### Libraries
+* https://github.com/mikalhart/TinyGPS/releases/tag/v13 
+    * Anleitung hier: http://arduiniana.org/libraries/tinygps/
+* https://github.com/matthijskooijman/arduino-lmic
+    * Tipps hier: https://www.thethingsnetwork.org/forum/c/nodes/lmic
+
+Wir haben eine ausführliche Präsentation zum Aufbau dieses GPS-Trackers erstellt. Darin werden u.a. auch noch einmal die Grundlage zum TTN (The Thing Network) und der Verbindung mit dem LoRaWan erklärt. [Hier geht's zur Präsi!](https://github.com/technologiestiftung/workshops/tree/master/xx_GPSTracker_Pr%C3%A4si)
 
 
