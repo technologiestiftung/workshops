@@ -35,7 +35,10 @@ Jedes einzelne Modul bzw. jede einzelne Hardware-Komponente, wie bspw. Display, 
 * https://github.com/adafruit/Adafruit_SSD1306
 * https://github.com/mikalhart/TinyGPSPlus (im Ordner src)
 
+#### Code aka. Sketch
+Nach dem Setup der Hardware, muss nun mit Hilfe der Arduino-IDE ein Sketch (Sketch == Code == Programm) auf das Arduino-Board geladen werden. Dazu schließt man den Arduino vie Mini-USB an seinen Client (Client == Rechner == Laptop) an und öffnet die Arduino IDE (Download der Arduino-IDE [auf der offiziellen Website](https://www.arduino.cc/en/main/software)). In der IDE (Integrated Development Environment aka. Integrierte Entwicklungsumgebung) schreibt man das Sketch für den Mikrocontroller und lädt es schließlich auf das Board.
 
+**Wichtig**: damit das Sketch auf das Board geladen werden kann, muss zunächst das richtige Board (Arduino Nano) und der richtige Port (incoming USB-POrt) ausgewählt werden. Ihr könnt beide Einstellungem im Menüband unter "Tools" überprüfen und anpassen.
 
 Untder dem nachfolgendem Link, findet ihr eine ähnliche Bauanleitung mit gleichen Hardware-Komponenten. Der Autor hat in diesem Fall mit das Display sehr gut mit Hilfe der dtostrf-Funktion gestaltet: https://robotzero.one/arduino-neo-gps-oled/
 Die dtostrf-Funktion erklärt: https://www.mikrocontroller.net/topic/86391
@@ -67,9 +70,10 @@ Welche Hardware man für diese version benötigt:
 
 Der Gesamtpreis für die Hardware für GPS-Tracker Version 1 liegt damit bei **57 Euro**. Zugegeben, das klingt jetzt erst mal nach viel Geld. Für einen einfach, frustrfreien Einstieg in die LoRaWan-Tehmatik ist das Shield von Dragino jedoch sehr gut geeignet. Es kombiniert GPS-Modul + Antenne (sandfarbener Würfel) und LoRa Bee + Antenne (weißer Stab) und wird einfach auf den Arduino Uno aufsgeteckt. Man kann das Shield natürlich auch für weniger Geld aus den Eizelteilen nachbauen oedr gar LoRa-Modul und GPS-Modul einzeln mit den Arduino verkabeln. Diese Vorgehensweise beleuchten wir allerdings nicht.
 
-<img align="right" width="300" src="images/GPSTracker/Arduino_LoRa.jpg">
 
 #### Verkabelung
+<img align="right" width="300" src="images/GPSTracker/Arduino_LoRa.jpg">
+
 Zur Verkabelung mit dem Arduino Uno benötigen wir lediglich zwei Kabel. **WICHTIG**: die Jumper von RX (Receive) und TX (Transmitter) müssen entfernt werden, damit ein Signal übertragen werden kann.
 
 #### Libraries
