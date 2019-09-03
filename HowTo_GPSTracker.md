@@ -72,7 +72,7 @@ Der Gesamtpreis für die Hardware für GPS-Tracker Version 1 liegt damit bei **5
 
 
 #### Verkabelung
-<img align="right" width="300" src="images/GPSTracker/Arduino_LoRa.jpg">
+<img align="right" width="300" src="images/GPSTracker/Arduino_LoRa.png">
 
 Zur Verkabelung mit dem Arduino Uno benötigen wir lediglich zwei Kabel. **WICHTIG**: die Jumper von RX (Receive) und TX (Transmitter) müssen entfernt werden, damit ein Signal übertragen werden kann.
 
