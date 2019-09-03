@@ -30,7 +30,7 @@ delay(2000); //wartet zwei Sekunden, damit man den Output lesen kann
 
 // ENDE LOOP-SCHLEIFE
 
-// ************* Fehlermeldung beim Hochladen etwa in diesem Stil: *************
+// ************* Fehlermeldung beim Hochladen etwa in deisem Stil: *************
 //
 //  avrdude: stk500v2_ReceiveMessage(): timeout
 //  avrdude: stk500v2_getsync(): timeout communicating with programmer
