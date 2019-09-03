@@ -18,7 +18,7 @@ In den sogenannten **HOW TOs** findet ihr eine ausführliche Anleitun zu den jew
 ## Übersicht aller Workshops
 
 #### Workshop vom 30.08.2019 – GPS-Tracking & LoRaWAN mit dem Arduino TEIL 1/2
-Geeignet für Neueinsteiger*innen in das Thema Arduino, GPS-Tracking, serielle Kommunikation & LoRaWAN. Bau von zwei Versionen: GPS-Tracker auf Ardduino Nano mit OLED-Display (kleines Packmaß, kein LoRaWan) // GPS-Tracker auf Arduino Uno mit LoRaWan-Funktion (großes Packmaß, ohne Display)
+Geeignet für Neueinsteiger_innen in das Thema Arduino, GPS-Tracking, serielle Kommunikation & LoRaWAN. Bau von zwei Versionen: GPS-Tracker auf Ardduino Nano mit OLED-Display (kleines Packmaß, kein LoRaWan) // GPS-Tracker auf Arduino Uno mit LoRaWan-Funktion (großes Packmaß, ohne Display)
 
 #### Workshop vom 18.09.2019 - GPS-Tracking & LoRaWAN mit dem Arduino TEIL 2/2
-Geeignet für Neueinsteiger*innen und Teilnehmer*innen von TEIL 1. Bau von einer Version, die die Vorzüge von den beiden Versionen aus Workshop TEIL 1 verbindet: GPS-Tracker auf Arduino Nano mit LoRaWan-Funktion (kleines Packmaß, Display zur Kontrolle möglich).
+Geeignet für Neueinsteiger_innen und Teilnehmer_innen von TEIL 1. Bau von einer Version, die die Vorzüge von den beiden Versionen aus Workshop TEIL 1 verbindet: GPS-Tracker auf Arduino Nano mit LoRaWan-Funktion (kleines Packmaß, Display zur Kontrolle möglich).
