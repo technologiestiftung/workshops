@@ -1,3 +1,7 @@
+<img align="right" width="220" src="images/citylab-logo-2160x550.jpg">
+
+
+&nbsp;
 # Bauanleitung GPS-Tracker
 
 <img align="top" width="100%" src="images/GPSTracker/Header_GPSTracker_new.jpg">
@@ -19,7 +23,7 @@ Welche Hardware man für diese Version benötigt:
 * 0.96" I2C OLED-Display  à 5€ (https://www.az-delivery.de/products/0-96zolldisplay?_pos=3&_sid=10138dee5&_ss=r&ls=de)
 * ein paar Kabel à 3€ (https://www.az-delivery.de/products/3er-set-40-stk-jumper-wire-m2m-f2m-f2f?_pos=1&_sid=88ced2339&_ss=r&ls=de)
 
-Der Gesamtpreis für die Hardware für GPS-Tracker Version 1 liegt damit bei 36 Euro. Möchte man ein paar Euros sparen, kann man auch den Arduino Nano inkl. Mini-USB Kabel (benötigt man, um das Setch auf das Board zu übertragen) auch "nicht original" bestellen (https://www.az-delivery.de/products/nano-v3-0-pro?ls=de). Funktioniert für uns genau so gut.
+Der Gesamtpreis für die Hardware für GPS-Tracker Version 1 liegt damit bei **36 Euro**. Möchte man ein paar Euros sparen, kann man auch den Arduino Nano inkl. Mini-USB Kabel (benötigt man, um das Setch auf das Board zu übertragen) auch "nicht original" für nur 5 Euro bestellen (https://www.az-delivery.de/products/nano-v3-0-pro?ls=de). Funktioniert für uns genau so gut.
 
 Jedes einzelne Modul bzw. jede einzelne Hardware-Komponente, wie bspw. Display, GPS-Sensor etc., muss natürlich irgendwie über den Arduino angesteuert werden. Demnach benötogt man für bestimmte Module auch bestimmte Libraries, die in den Programmcode in den Präprozessor (also ganz am Anfang des Codes) durch das Schlüsselwort #include eingebunden werden müssen. Für diese Version haben wir 3 zusützliche Libraries eingebunden, die nicht per default über Arduino bereitgestellt werden. Das sind:
 * https://github.com/adafruit/Adafruit-GFX-Library
@@ -50,3 +54,5 @@ Wer erst einmal nur mit dem Display warm werden möchte, der kann dieses auch ei
 
 Welche Hardware man für diese version benötigt:
 * Arduino Nano Rev3 à 20€ (https://store.arduino.cc/arduino-uno-rev3)
+* LoRa/GPS-Shield mit Xbee ()
+* ein paar Kabel à 3€ (https://www.az-delivery.de/products/3er-set-40-stk-jumper-wire-m2m-f2m-f2f?_pos=1&_sid=88ced2339&_ss=r&ls=de)
