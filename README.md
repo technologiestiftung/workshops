@@ -15,10 +15,22 @@ In den sogenannten **HOW TOs** findet ihr eine ausführliche Anleitun zu den jew
 
 
 &nbsp;
-## Übersicht aller Workshops
+
+## Coming Sooon!
+
+#### Workshop am 18.09.2019 - GPS-Tracking & LoRaWAN mit dem Arduino TEIL 2/2
+Geeignet für Neueinsteiger_innen und Teilnehmer_innen von TEIL 1. Bau von einer Version, die die Vorzüge von den beiden Versionen aus Workshop TEIL 1 verbindet: GPS-Tracker auf Arduino Nano mit LoRaWan-Funktion (kleines Packmaß, Display zur Kontrolle möglich).
+
+
+&nbsp;
+## Übersicht aller vergangenen Workshops im CityLAB
 
 #### Workshop vom 30.08.2019 – GPS-Tracking & LoRaWAN mit dem Arduino TEIL 1/2
 Geeignet für Neueinsteiger_innen in das Thema Arduino, GPS-Tracking, serielle Kommunikation & LoRaWAN. Bau von zwei Versionen: GPS-Tracker auf Ardduino Nano mit OLED-Display (kleines Packmaß, kein LoRaWan) // GPS-Tracker auf Arduino Uno mit LoRaWan-Funktion (großes Packmaß, ohne Display)
 
-#### Workshop vom 18.09.2019 - GPS-Tracking & LoRaWAN mit dem Arduino TEIL 2/2
-Geeignet für Neueinsteiger_innen und Teilnehmer_innen von TEIL 1. Bau von einer Version, die die Vorzüge von den beiden Versionen aus Workshop TEIL 1 verbindet: GPS-Tracker auf Arduino Nano mit LoRaWan-Funktion (kleines Packmaß, Display zur Kontrolle möglich).
+
+&nbsp;
+## Remote Workshops
+Einige **kleinere Projekte** und Testfälle haben wir ebenfalls dokumentiert, sodass Ihr sie nachbauen und selbst coden könnt. 
+Beispiele hierführ sind bspw. die Übertragung von Temperaturmesswerten ins TTN (The Things Network) und das testen der seriellen Kommunikation (zwischen Lappi und Arduino Baord). Unter den **HOW TOs** findet ihr ausführlich **kommentierte Codes.**
+
