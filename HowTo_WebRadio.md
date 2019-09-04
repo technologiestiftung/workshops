@@ -5,7 +5,7 @@
 
 <img align="top" width="100%" src="images/WebRadio/Header_WebRadio.jpg">
 
-In dieser Bauanleitung wollen wir zeigen, wie man aus einem Bluetooth fähigen Radio und einem Raspberry Pi 3 ein Web Radio baut. Genauer: konfiguriert. Denn gebaut wurde das Radio ja schon.
+##### In dieser Bauanleitung wollen wir zeigen, wie man aus einem Bluetooth fähigen Radio und einem Raspberry Pi 3 ein Web Radio baut. Genauer: konfiguriert. Denn gebaut wurde das Radio ja schon.
 
 #### Die Idee
 Man nehme ein Bluetooth fähiges Radio, verknüpftf dieses via Bluetooth mit dem RasPi, welcher wiederum mit dem lokalen WIFI verknüpft ist und alle möglichen Webradio-Sender dieser Welt abspielen kann. In Unserem Falle handelt es sich um ein **auna Belle Epoque 1906** mit Bluetooth-Funktion, USB-Anschluss und Fernebdienung. Was das Radio leider nicht hat: ein **WIFI-Adapter**. Die gute Nachricht: bei dem verwendetem Raspberry Modell Nummer 3 ist wurde ein boardinternes Chipset für WIFI und Bluetooth verbaut, sodass wir keine zusätzlichen Komponenten benötigen.
