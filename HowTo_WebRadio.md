@@ -30,7 +30,11 @@ Wer seinen RasPi neu gekauft hat, muss zunächst erst einmal das Betriebssystem 
 * Headless: **TBD**
 
 ## Step 2 - Raspberry Pi 3 via SSH mit dem Laptop verbinden
-Um den RasPi mit dem Client zu verbinden, benötigt man zunächst die Netzwerkadresse des Mikrokontrollers..... TBD
+Um den RasPi mit dem Client zu verbinden, benötigt man zunächst die Netzwerkadresse des Mikrokontrollers.
+**MAC Konsole** 
+```console
+$ arp -a | grep raspberry
+```
 
 
 
