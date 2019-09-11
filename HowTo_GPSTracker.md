@@ -1,7 +1,7 @@
 <img align="right" width="260" src="images/citylab-logo-2160x550.jpg">
 
 &nbsp;
-# Bauanleitung GPS-Tracker
+# Bauanleitung GPS-Tracker - Workshop No. 1/2
 
 <img align="top" width="100%" src="images/GPSTracker/Header_GPSTracker_new.jpg">
 
@@ -92,4 +92,6 @@ Wir haben eine ausführliche Präsentation zum Aufbau dieses GPS-Trackers erstel
 
 **[Hier geht's zur Präsi!](https://github.com/technologiestiftung/workshops/tree/master/xx_GPSTracker_Pr%C3%A4si)**
 
+# Bauanleitung GPS-Tracker - Workshop No 2/2
 
+Inspiration von Björn auf [Björns Techbog](https://www.bjoerns-techblog.de/2017/07/mein-erster-lowcost-lorawan-node/)
