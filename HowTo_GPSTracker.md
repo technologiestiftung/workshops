@@ -114,11 +114,11 @@ Für die, nennen wir sie mal "Master-Version", benötigen wir die folgenden Hard
 
 Zusammengerechnet kommen wir pro Tracker auf Kosten von 30€ und liegen damit weit unter dem Preis massenhaft GPS-Tracker (die i.d.R. bei 50€ anfangen).   
 
-<img align="right" width="100" src="images/GPSTracker/TTN_logo.png">
+<img align="right" width="80" position="inline" src="images/GPSTracker/TTN_logo.png">
 
 ## Datenübertragung
 
-<img align="right" width="400" src="images/GPSTracker/LoRa_image.jpg">
+<img align="right" width="400" position="inline" src="images/GPSTracker/LoRa_image.jpg">
 
 An dieser Stelle ein Hinweis: die konventionellen GPS-Tracker, wie man sie bei den einschlägigen Online-Händlern findet, nutzen das Mobilfunknetz und – ähnlich wie ein Handy – das Internet zur Daten- bzw. GPS-Koordinatenübertragung. Demnach ist für die Benutzung solcher Tracker eine eigene SIM-Karte für den Tracker unerlässlich.   
 
