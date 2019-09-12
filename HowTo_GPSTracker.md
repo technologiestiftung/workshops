@@ -112,7 +112,11 @@ Für die, nennen wir sie mal "Master-Version", benötigen wir die folgenden Hard
 
 * LoRa Bee (Bestellung [HIER](https://www.exp-tech.de/module/wireless/funk/7769/dragino-lora-bee-868) möglich)
 
+Zusammengerechnet kommen wir pro Tracker auf Kosten von 30€ und liegen damit weit unter dem Preis massenhaft GPS-Tracker (die i.d.R. bei 50€ anfangen).   
 
+## Datenübertragung
+An dieser Stelle ein Hinweis: die konventionellen GPS-Tracker, wie man sie bei den einschlägigen Online-Händlern findet, nutzen das Mobilfunknetz und – ähnlich wie ein Handy – das Internet zur Daten- bzw. GPS-Koordinatenübertragung. Demnach ist für die Benutzung solcher Tracker eine eigene SIM-Karte für den Tracker unerlässlich.   
 
+Unser Model hingegen benutzt, wie der Name schon verrät, das LoRaWAN (Low Range Wide Area Network) zur Übertragung der Daten. Also ein komplett anderes Netz. Damit die Daten über das LoRa-Netz übertragen werden können, müssen einige Dinge beachetet werden. Zunächst einmal ist es wichtig zu wissen, dass das LoRaWAN in Europa eine bestimmte Frequenz
 
 Inspiration von Björn auf [Björns Techblog](https://www.bjoerns-techblog.de/2017/07/mein-erster-lowcost-lorawan-node/)
