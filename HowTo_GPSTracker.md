@@ -114,8 +114,9 @@ Für die, nennen wir sie mal "Master-Version", benötigen wir die folgenden Hard
 
 Zusammengerechnet kommen wir pro Tracker auf Kosten von 30€ und liegen damit weit unter dem Preis massenhaft GPS-Tracker (die i.d.R. bei 50€ anfangen).   
 
+<img align="right" width="160" src="images/GPSTracker/TTN_logo.png">
+
 ## Datenübertragung
-<img align="right" width="260" src="images/GPSTracker/TTN_logo.png">
 
 <img align="right" width="400" src="images/GPSTracker/LoRa_image.jpg">
 
