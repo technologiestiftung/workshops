@@ -1,3 +1,5 @@
+<img align="right" width="260px" src="images/citylab-logo-2160x550.jpg">
+
 # Bauanleitung GPS-Tracker
 ## Workshop vom 18. September 2019
 
