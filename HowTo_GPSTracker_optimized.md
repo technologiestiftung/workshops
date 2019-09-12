@@ -24,7 +24,7 @@ Zusammengerechnet kommen wir pro Tracker auf Kosten von 30€ und liegen damit w
 
 **Nice-To-Know:** der uns preiswerteste, bekannte GPS-Tracker (mit LoRaWAN) liegt bei 85€.
 
-<img align="right" width="80" position="inline" margin-bottom="10px" src="images/GPSTracker/TTN_logo.png">
+<img align="right" width="80px" position="inline" margin-bottom="10px" src="images/GPSTracker/TTN_logo.png">
 
  
 ## First Things First: How To "Datenübertragung"
@@ -45,7 +45,7 @@ Der Aufbau des LoRaWAN ist recht simpel (siehe nachfolgendes Image). Wobei gilt:
 * Network-Server == Nutzung von The Thing Network
 * Application Server == unsere Applikation auf dem Server von TTN.
 
-<img style="display:block margin-left:auto margin-right:auto width:80%" src="images/GPSTracker/LoRa_image.jpg">
+<img align="middle" width="80%" src="images/GPSTracker/LoRa_image.jpg">
 
 Damit die Daten über das LoRa-Netz übertragen werden können, müssen einige Dinge beachetet werden. Zunächst einmal ist es wichtig zu wissen, dass das LoRaWAN in Europa eine bestimmte Frequenz
 
