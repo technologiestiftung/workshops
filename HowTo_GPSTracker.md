@@ -18,7 +18,7 @@ Nachfolgend soll das Setup von Version 1 beschrieben werden.
 
 #### Hardware
 Welche Hardware man für diese Version benötigt:
-* Arduino Nano à 20€ [Bestellung u.a HIER möglich](https://store.arduino.cc/arduino-nano)
+* Arduino Nano à 20€ ([Bestellung HIER möglich](https://store.arduino.cc/arduino-nano))
 * NEO 6M GPS-Modul à 8€ [Bestellung u.a HIER möglich](https://www.az-delivery.de/products/neo-6m-gps-modul?ls=de&cache=false)
 * 0.96" I2C OLED-Display  à 5€ [Bestellung u.a HIER möglich](https://www.az-delivery.de/products/0-96zolldisplay?_pos=3&_sid=10138dee5&_ss=r&ls=de)
 * ein paar Kabel à 3€ [Bestellung u.a HIER möglich](https://www.az-delivery.de/products/3er-set-40-stk-jumper-wire-m2m-f2m-f2f?_pos=1&_sid=88ced2339&_ss=r&ls=de)
