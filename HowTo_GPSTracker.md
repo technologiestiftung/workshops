@@ -116,6 +116,8 @@ Zusammengerechnet kommen wir pro Tracker auf Kosten von 30€ und liegen damit w
 
 <img align="right" width="80" position="inline" src="images/GPSTracker/TTN_logo.png">
 
+  
+
 ## Datenübertragung
 
 <img align="right" width="400" position="inline" src="images/GPSTracker/LoRa_image.jpg">
