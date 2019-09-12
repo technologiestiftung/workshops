@@ -1,6 +1,6 @@
 <img align="right" width="260px" src="images/citylab-logo-2160x550.jpg">
 
-# Bauanleitung GPS-Tracker
+# Bauanleitung GPS-Tracker (optimized)
 ## Workshop vom 18. September 2019
 
 Nach einem erfolgreichen ersten Workshop zum Thema LoRa und GPS haben wir uns kurzer Hand für einen weiterführenden, zweiten Workshop zum Thema entschieden. In diesem Workshop sollen die Vorzüge von beiden Versionen des ersten Workshops – sehr **kleines Packmaß mit Batteriestromversorgung (Version 1)** mit der **LoRa-Funktion (Version 2) kombiniert** werden. Dazu nutzen wir den bereits exitierenden Schaltplan von Version 1 (Nano mit kleinem Display), entfernen das Display und ersetzen es durch ein eine **Dragino LoRa Bee**. Die Verkabelung und der Code muss natürlich entsprechend angepasst werden – aber dazu später mehr.
@@ -37,8 +37,6 @@ Unser GPS-Tracker hingegen benutzt, wie der Name schon verrät, das **Low Range 
 
 Viele **Internet of Things Anwendungen** (bspw. für Straßenbeleuchtung, Wetterstationen, etc.) und deren dazugehörigen Sensorknoten nutzen bereits seit Anfang der 2000er das LoRaWAN zur Datenübertragung. Die Nutzung ist kostenlos und kann sehr einfach über eine eigene, persönliche Applikation auf [**The Things Network**](https://www.thethingsnetwork.org/) verwaltet werden. Dazu aber später mehr.  
 
-Wer neugierig geworden ist und mehr über das LoRaWAN erfahren möchte, dem empfehlen wir die Website [https://www.lora-wan.de/](https://www.lora-wan.de/) zur weiteren Recherche.
-
 Der Aufbau des LoRaWAN ist recht simpel (siehe nachfolgendes Image). Wobei gilt:
 * Endnode == unser GPS-Tracker
 * Gateway(s) == können auf [https://ttnmapper.org/](https://ttnmapper.org/) gefunden werden
@@ -47,6 +45,14 @@ Der Aufbau des LoRaWAN ist recht simpel (siehe nachfolgendes Image). Wobei gilt:
 
 <img align="middle" width="80%" src="images/GPSTracker/LoRa_image.jpg">
 
-Damit die Daten über das LoRa-Netz übertragen werden können, müssen einige Dinge beachetet werden. Zunächst einmal ist es wichtig zu wissen, dass das LoRaWAN in Europa eine bestimmte Frequenz
+Wer neugierig geworden ist und mehr über das LoRaWAN erfahren möchte, dem empfehlen wir die Website [https://www.lora-wan.de/](https://www.lora-wan.de/) zur weiteren Recherche. Aber nun, weiter im Text.
 
-Inspiration von Björn auf [Björns Techblog](https://www.bjoerns-techblog.de/2017/07/mein-erster-lowcost-lorawan-node/)
+#### Verkabelung
+
+Die einzelnen Hardware-Komponenten müssen wie folgt miteinander verkabelt werden. Für die Stromversorgung haben wir uns in unserem Schaltplan für eine 9V Batterie entschieden, das Board kann aber auch ohne Probleme mit dem Mini-USB-Kabel per Computer versorgt werden.
+
+<img align="left" width="100%" src="images/GPSTracker/Zoidberg.jpg">
+
+Inspiration dazu haben wir auf [Björns Techblog](https://www.bjoerns-techblog.de/2017/07/mein-erster-lowcost-lorawan-node/) gefunden. Danke, Björn.
+
+
