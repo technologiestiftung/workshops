@@ -20,7 +20,9 @@ Für die, nennen wir sie mal "Master-Version", benötigen wir die folgenden Hard
 
 * LoRa Bee (Bestellung [HIER](https://www.exp-tech.de/module/wireless/funk/7769/dragino-lora-bee-868) möglich)
 
-Zusammengerechnet kommen wir pro Tracker auf Kosten von 30€ und liegen damit weit unter dem Preis der gängigen GPS-Tracker (mit SIM-Karte), die i.d.R. bei 50€ anfangen. **Nice-To-Know:** der uns preiswerteste, bekannte GPS-Tracker (mit LoRaWAN) liegt bei 85€.
+Zusammengerechnet kommen wir pro Tracker auf Kosten von 30€ und liegen damit weit unter dem Preis der gängigen GPS-Tracker (mit SIM-Karte), die i.d.R. bei 50€ anfangen.  
+
+**Nice-To-Know:** der uns preiswerteste, bekannte GPS-Tracker (mit LoRaWAN) liegt bei 85€.
 
 <img align="right" width="80" position="inline" src="images/GPSTracker/TTN_logo.png">
 
