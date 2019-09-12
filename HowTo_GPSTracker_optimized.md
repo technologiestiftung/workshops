@@ -5,9 +5,10 @@
 
 Nach einem erfolgreichen ersten Workshop zum Thema LoRa und GPS haben wir uns kurzer Hand für einen weiterführenden, zweiten Workshop zum Thema entschieden. In diesem Workshop sollen die Vorzüge von beiden Versionen des ersten Workshops – sehr **kleines Packmaß mit Batteriestromversorgung (Version 1)** mit der **LoRa-Funktion (Version 2) kombiniert** werden. Dazu nutzen wir den bereits exitierenden Schaltplan von Version 1 (Nano mit kleinem Display), entfernen das Display und ersetzen es durch ein eine **Dragino LoRa Bee**. Die Verkabelung und der Code muss natürlich entsprechend angepasst werden – aber dazu später mehr.
 
+#### Hardware 
+
 <img align="right" width="400px" src="images/GPSTracker/Zoidberg.jpg">
 
-#### Hardware
 Für die, nennen wir sie mal "Master-Version", benötigen wir die folgenden Hardware-Komponenten:
 * 9V Batterien + Ladegerät (Bestellung [HIER](https://www.amazon.de/Ladeger%C3%A4t-Keenstone-aufladbare-Batterien-USB-Ladekabel-6-St-3-Slots-Ladegeraet/dp/B07BRKJV3J/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=9+volt+batterie+800mAh+keenstone&qid=1568196073&s=computers&sr=8-2) möglich)
 
