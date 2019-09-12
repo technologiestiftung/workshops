@@ -45,7 +45,7 @@ Der Aufbau des LoRaWAN ist recht simpel (siehe nachfolgendes Image). Wobei gilt:
 * Network-Server == Nutzung von The Thing Network
 * Application Server == unsere Applikation auf dem Server von TTN.
 
-<img align="right" width="100%" position="inline" src="images/GPSTracker/LoRa_image.jpg">
+<img align="right" width="80%" position="inline" src="images/GPSTracker/LoRa_image.jpg">
 
 Damit die Daten über das LoRa-Netz übertragen werden können, müssen einige Dinge beachetet werden. Zunächst einmal ist es wichtig zu wissen, dass das LoRaWAN in Europa eine bestimmte Frequenz
 
