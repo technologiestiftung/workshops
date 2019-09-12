@@ -39,7 +39,7 @@ Viele **Internet of Things Anwendungen** (bspw. für Straßenbeleuchtung, Wetter
 
 Wer neugierig geworden ist und mehr über das LoRaWAN erfahren möchte, dem empfehlen wir die Website [https://www.lora-wan.de/](https://www.lora-wan.de/) zur weiteren Recherche.
 
-Der Aufbau des LoRaWAN ist recht simpel (siehe nachfolgendes Image). 
+Der Aufbau des LoRaWAN ist recht simpel (siehe nachfolgendes Image). Wobei gilt: Endnode == unser GPS-Tracker | Gateway == können auf [https://ttnmapper.org/](https://ttnmapper.org/) gefunden werden | Network-Server == Nutzung von The Thing Network | Application Server == unsere Applikation im TTN.
 
 <img align="right" width="100%" position="inline" src="images/GPSTracker/LoRa_image.jpg">
 
