@@ -51,7 +51,7 @@ Wer neugierig geworden ist und mehr über das LoRaWAN erfahren möchte, dem empf
 
 Die einzelnen Hardware-Komponenten müssen wie folgt miteinander verkabelt werden. Für die Stromversorgung haben wir uns in unserem Schaltplan für eine 9V Batterie entschieden, das Board kann aber auch ohne Probleme mit dem Mini-USB-Kabel per Computer versorgt werden.
 
-<img align="left" width="100%" src="images/GPSTracker/Lorabee_Steckplatine.pdf">
+<img align="left" width="100%" src="images/GPSTracker/Nano_Xbee_Schaltplan.png">
 
 Inspiration dazu haben wir auf [Björns Techblog](https://www.bjoerns-techblog.de/2017/07/mein-erster-lowcost-lorawan-node/) gefunden. Danke, Björn.
 
