@@ -26,7 +26,16 @@ Zusammengerechnet kommen wir pro Tracker auf Kosten von 30€ und liegen damit w
 
 <img align="right" width="80px" position="inline" margin-bottom="10px" src="images/GPSTracker/TTN_logo.png">
 
- 
+
+#### Verkabelung
+
+Die einzelnen Hardware-Komponenten müssen wie folgt miteinander verkabelt werden. Für die Stromversorgung haben wir uns in unserem Schaltplan für eine 9V Batterie entschieden, das Board kann aber auch ohne Probleme mit dem Mini-USB-Kabel per Computer versorgt werden.
+
+<img align="left" width="100%" src="images/GPSTracker/Nano_Xbee_Schaltplan.png">
+
+Inspiration dazu haben wir auf [Björns Techblog](https://www.bjoerns-techblog.de/2017/07/mein-erster-lowcost-lorawan-node/) gefunden. Danke, Björn.
+
+
 ## First Things First: How To "Datenübertragung"
 
 #### Via Mobilfunknetz und Internet
@@ -47,12 +56,25 @@ Der Aufbau des LoRaWAN ist recht simpel (siehe nachfolgendes Image). Wobei gilt:
 
 Wer neugierig geworden ist und mehr über das LoRaWAN erfahren möchte, dem empfehlen wir die Website [https://www.lora-wan.de/](https://www.lora-wan.de/) zur weiteren Recherche. Aber nun, weiter im Text.
 
-#### Verkabelung
 
-Die einzelnen Hardware-Komponenten müssen wie folgt miteinander verkabelt werden. Für die Stromversorgung haben wir uns in unserem Schaltplan für eine 9V Batterie entschieden, das Board kann aber auch ohne Probleme mit dem Mini-USB-Kabel per Computer versorgt werden.
+#### GPS-Tracker im TTN-Netzwerk registrieren
+Damit eine Verbindung zu unserer Endnode hergestellt werden kann, muss zunächst eine Apllikation im [The Things Network](https://www.thethingsnetwork.org/) eingerichtet werden. Folgende Schritte sind dazu notwenig:
+* Profil auf TTN erstellen (Email-Adresse notwendig)
+* über Console --> Applications --> Button "add application" neue, persönliche Applikation anlegen (application ID ist der Name)
+* in der persönlichen Applikation über Devices --> Button "register device" den GPS-Tracker registrieren
 
-<img align="left" width="100%" src="images/GPSTracker/Nano_Xbee_Schaltplan.png">
+Eine Anleitung mit Screenshots von der Benutzeroberfläche findet man auf [adafruit.com](https://learn.adafruit.com/the-things-network-for-feather?view=all).  
 
-Inspiration dazu haben wir auf [Björns Techblog](https://www.bjoerns-techblog.de/2017/07/mein-erster-lowcost-lorawan-node/) gefunden. Danke, Björn.
+<img align="left" width="20%" src="images/GPSTracker/TTN_Settings1.png">
+<img align="left" width="80%" src="images/GPSTracker/TTN_Settings2.png">
+
+Sobald der GPS-Tracker regsitiert wurde, müssen noch einige **wichtige Einstellungen** getroffenen werden, da sonst die Datenübertragung 
+im Zusammenspiel mit unserem Code nicht funktioniert:
+* **Activation Method: ABP** (AppKey und NwkSKey können direkt in den Sketch geschrieben werden)
+* **Frame Counter Width: 16 Bit** 
+* **Frame Coutner Checks: dekativieren** (bei erneutem Sketch-Upload oder Reboot werden Datenpackete mit bereits exitsierendem counter übertragen)
+
+
+
 
 
