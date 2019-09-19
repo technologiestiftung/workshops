@@ -66,7 +66,7 @@ Damit eine Verbindung zu unserer Endnode hergestellt werden kann, muss zunächst
 Eine Anleitung mit Screenshots von der Benutzeroberfläche findet man auf [adafruit.com](https://learn.adafruit.com/the-things-network-for-feather?view=all).  
 
 
-<img align="left" width="15%" border="1" src="images/GPSTracker/TTN_Settings1.png">
+<img align="left" width="17%" border="1" src="images/GPSTracker/TTN_Settings1.png">
 <img align="left" position="inline" width="75%" border="1" src="images/GPSTracker/TTN_Settings2.png">
 
 
