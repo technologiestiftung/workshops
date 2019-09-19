@@ -58,6 +58,10 @@ Wer neugierig geworden ist und mehr über das LoRaWAN erfahren möchte, dem empf
 
 
 #### GPS-Tracker im TTN-Netzwerk registrieren
+Was ist eigentlich dieses TTN? Ein kurzes Video schafft Klarheit:
+
+
+
 Damit eine Verbindung zu unserer Endnode hergestellt werden kann, muss zunächst eine Apllikation im [The Things Network](https://www.thethingsnetwork.org/) eingerichtet werden. Folgende Schritte sind dazu notwenig:
 * Profil auf TTN erstellen (Email-Adresse notwendig)
 * über Console --> Applications --> Button "add application" neue, persönliche Applikation anlegen (application ID ist der Name)
@@ -65,16 +69,17 @@ Damit eine Verbindung zu unserer Endnode hergestellt werden kann, muss zunächst
 
 Eine Anleitung mit Screenshots von der Benutzeroberfläche findet man auf [adafruit.com](https://learn.adafruit.com/the-things-network-for-feather?view=all).  
 
-
-<img align="left" width="17%" border="1" src="images/GPSTracker/TTN_Settings1.png">
-<img align="left" position="inline" width="75%" border="1" src="images/GPSTracker/TTN_Settings2.png">
-
-
 Sobald der GPS-Tracker regsitiert wurde, müssen noch einige **wichtige Einstellungen** getroffenen werden, da sonst die Datenübertragung 
 im Zusammenspiel mit unserem Code nicht funktioniert:
 * **Activation Method: ABP** (AppKey und NwkSKey können direkt in den Sketch geschrieben werden)
 * **Frame Counter Width: 16 Bit** 
 * **Frame Coutner Checks: dekativieren** (bei erneutem Sketch-Upload oder Reboot werden Datenpackete mit bereits exitsierendem counter übertragen)
+
+
+<img align="left" width="17%" border="1" src="images/GPSTracker/TTN_Settings1.png">
+<img align="left" position="inline" width="75%" border="1" src="images/GPSTracker/TTN_Settings2.png">
+
+
 
 
 
