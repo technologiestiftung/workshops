@@ -69,16 +69,18 @@ Damit eine Verbindung zu unserer Endnode hergestellt werden kann, muss zunächst
 
 Eine Anleitung mit Screenshots von der Benutzeroberfläche findet man auf [adafruit.com](https://learn.adafruit.com/the-things-network-for-feather?view=all).  
 
-Sobald der GPS-Tracker regsitiert wurde, müssen noch einige **wichtige Einstellungen** getroffenen werden, da sonst die Datenübertragung 
+Sobald der GPS-Tracker registriert wurde, müssen noch einige **wichtige Einstellungen** getroffenen werden, da sonst die Datenübertragung 
 im Zusammenspiel mit unserem Code nicht funktioniert:
 * **Activation Method: ABP** (AppKey und NwkSKey können direkt in den Sketch geschrieben werden)
-* **Frame Counter Width: 16 Bit** 
+* **Frame Counter Width: 16 Bit** (wichtig, damit payload nicht überläuft)
 * **Frame Coutner Checks: dekativieren** (bei erneutem Sketch-Upload oder Reboot werden Datenpackete mit bereits exitsierendem counter übertragen)
 
 
 <img align="left" width="17%" border="1" src="images/GPSTracker/TTN_Settings1.png">
 <img align="left" position="inline" width="75%" border="1" src="images/GPSTracker/TTN_Settings2.png">
 
+
+Sobald das Device einmal registriert ist, können die nötigen **drei Variablen, die im Sketch ergänzt werden müssen**, ausgelesen werden. Der Sketch befindet sich ebenfalls hier in diesem Repository im Ordner "sketches".
 
 
 
