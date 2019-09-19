@@ -67,7 +67,7 @@ Eine Anleitung mit Screenshots von der Benutzeroberfläche findet man auf [adafr
 
 
 <img align="left" width="20%" border="1" src="images/GPSTracker/TTN_Settings1.png">
-<img align="left" width="80%" border="1" src="images/GPSTracker/TTN_Settings2.png">
+<img align="left" position="inline" width="75%" border="1" src="images/GPSTracker/TTN_Settings2.png">
 
 
 Sobald der GPS-Tracker regsitiert wurde, müssen noch einige **wichtige Einstellungen** getroffenen werden, da sonst die Datenübertragung 
