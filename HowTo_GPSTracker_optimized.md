@@ -7,7 +7,7 @@ Nach einem erfolgreichen ersten Workshop zum Thema LoRa und GPS haben wir uns ku
 
 #### Hardware 
 
-<img align="right" width="400px" src="images/GPSTracker/Zoidberg.jpg">
+<img align="right" width="400px" src="images/GPSTracker/Nano_Xbee_Image.jpg">
 
 Für die, nennen wir sie mal "Master-Version", benötigen wir die folgenden Hardware-Komponenten:
 * 9V Batterien + Ladegerät (Bestellung [HIER](https://www.amazon.de/Ladeger%C3%A4t-Keenstone-aufladbare-Batterien-USB-Ladekabel-6-St-3-Slots-Ladegeraet/dp/B07BRKJV3J/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=9+volt+batterie+800mAh+keenstone&qid=1568196073&s=computers&sr=8-2) möglich)
@@ -26,7 +26,16 @@ Zusammengerechnet kommen wir pro Tracker auf Kosten von 30€ und liegen damit w
 
 <img align="right" width="80px" position="inline" margin-bottom="10px" src="images/GPSTracker/TTN_logo.png">
 
- 
+
+#### Verkabelung
+
+Die einzelnen Hardware-Komponenten müssen wie folgt miteinander verkabelt werden. Für die Stromversorgung haben wir uns in unserem Schaltplan für eine 9V Batterie entschieden, das Board kann aber auch ohne Probleme mit dem Mini-USB-Kabel per Computer versorgt werden.
+
+<img align="left" width="100%" src="images/GPSTracker/Nano_Xbee_Schaltplan.png">
+
+Inspiration dazu haben wir auf [Björns Techblog](https://www.bjoerns-techblog.de/2017/07/mein-erster-lowcost-lorawan-node/) gefunden. Danke, Björn.
+
+
 ## First Things First: How To "Datenübertragung"
 
 #### Via Mobilfunknetz und Internet
@@ -47,12 +56,34 @@ Der Aufbau des LoRaWAN ist recht simpel (siehe nachfolgendes Image). Wobei gilt:
 
 Wer neugierig geworden ist und mehr über das LoRaWAN erfahren möchte, dem empfehlen wir die Website [https://www.lora-wan.de/](https://www.lora-wan.de/) zur weiteren Recherche. Aber nun, weiter im Text.
 
-#### Verkabelung
 
-Die einzelnen Hardware-Komponenten müssen wie folgt miteinander verkabelt werden. Für die Stromversorgung haben wir uns in unserem Schaltplan für eine 9V Batterie entschieden, das Board kann aber auch ohne Probleme mit dem Mini-USB-Kabel per Computer versorgt werden.
+#### GPS-Tracker im TTN-Netzwerk registrieren
+Was ist eigentlich dieses TTN? Ein kurzes Video schafft Klarheit:
 
-<img align="left" width="100%" src="images/GPSTracker/Zoidberg.jpg">
 
-Inspiration dazu haben wir auf [Björns Techblog](https://www.bjoerns-techblog.de/2017/07/mein-erster-lowcost-lorawan-node/) gefunden. Danke, Björn.
+
+Damit eine Verbindung zu unserer Endnode hergestellt werden kann, muss zunächst eine Apllikation im [The Things Network](https://www.thethingsnetwork.org/) eingerichtet werden. Folgende Schritte sind dazu notwenig:
+* Profil auf TTN erstellen (Email-Adresse notwendig)
+* über Console --> Applications --> Button "add application" neue, persönliche Applikation anlegen (application ID ist der Name)
+* in der persönlichen Applikation über Devices --> Button "register device" den GPS-Tracker registrieren
+
+Eine Anleitung mit Screenshots von der Benutzeroberfläche findet man auf [adafruit.com](https://learn.adafruit.com/the-things-network-for-feather?view=all).  
+
+Sobald der GPS-Tracker registriert wurde, müssen noch einige **wichtige Einstellungen** getroffenen werden, da sonst die Datenübertragung 
+im Zusammenspiel mit unserem Code nicht funktioniert:
+* **Activation Method: ABP** (AppKey und NwkSKey können direkt in den Sketch geschrieben werden)
+* **Frame Counter Width: 16 Bit** (wichtig, damit payload nicht überläuft)
+* **Frame Coutner Checks: dekativieren** (bei erneutem Sketch-Upload oder Reboot werden Datenpackete mit bereits exitsierendem counter übertragen)
+
+
+<img align="left" width="17%" border="1" src="images/GPSTracker/TTN_Settings1.png">
+<img align="left" position="inline" width="75%" border="1" src="images/GPSTracker/TTN_Settings2.png">
+
+
+Sobald das Device einmal registriert ist, können die nötigen **drei Variablen, die im Sketch ergänzt werden müssen**, ausgelesen werden. Der Sketch befindet sich ebenfalls hier in diesem Repository im Ordner "sketches".
+
+
+
+
 
 
