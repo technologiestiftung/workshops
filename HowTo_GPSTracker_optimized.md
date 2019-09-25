@@ -42,9 +42,9 @@ Inspiration dazu haben wir auf [Björns Techblog](https://www.bjoerns-techblog.d
 An dieser Stelle ein Hinweis: die konventionellen GPS-Tracker, wie man sie bei den einschlägigen Online-Händlern findet, nutzen das **Mobilfunknetz** und – ähnlich wie ein Handy – das Internet zur Daten- bzw. GPS-Koordinatenübertragung. Demnach ist für die Benutzung solcher Tracker eine eigene SIM-Karte für den Tracker unerlässlich. Vorteil hier, ist dass via Internet unter Nutzung von **Internetprotokollen wie TCP/IP und UDP** extrem Große Datenmengen (Stichwort: Breitband) mit extremer Geschwindigkeit übertragen werden können. Die Reichweite ist jedoch begrenzt. Durch die Kombination mit dem Mobilfunknetz (SIM-Karte) stellt die Reichweite zwar kein Problem mehr dar, jedoch verbrauchen diese Tracker sehr viel Leistung/Strom.  
 
 #### Via LoRaWAN
-Unser GPS-Tracker hingegen benutzt, wie der Name schon verrät, das **Low Range Wide Area Network**, welches zur Kategorie der Low-Range-Power-Netzprotokolle gehört, zur Übertragung der Daten. Also ein komplett anderes Netzprotokoll, welches speziell für die **drahtlose** Datenübertragung von **kleinen Datenmengen** (von 292 Bit/s bis 50 kbit/s), über **große Distanzen** (bis zu über 15km) zu verschiedensten, oft **batteriebetriebenen** Nodes, repektive Knotenpunkten, konzipiert wurde. Darüber hinaus weißt LoRa eine hohe Kapazität auf: bis zu **eine Million Knoten pro Anwendung** sind denkbar. Die LoRa-Technologie wird im sog. ISM-Band (Industrial, Scientific und Medical Frequenzbereich) bei 868 Megahertz in Europa und 915 MHz in Nordamerika betrieben. 
+Unser GPS-Tracker hingegen benutzt, wie der Name schon verrät, das **Low Range Wide Area Network**, welches zur Kategorie der Low-Range-Power-Netzprotokolle gehört, zur Übertragung der Daten. Also ein komplett anderes Netzprotokoll, welches speziell für die **drahtlose** Datenübertragung von **kleinen Datenmengen** (von 292 Bit/s bis 50 kbit/s), über **große Distanzen** (bis zu über 20km) zu verschiedensten, oft **batteriebetriebenen** Nodes, repektive Knotenpunkten, konzipiert wurde. Darüber hinaus weißt LoRa eine hohe Kapazität auf: bis zu **eine Million Knoten pro Anwendung** sind denkbar. Die LoRa-Technologie wird im sog. ISM-Band (Industrial, Scientific und Medical Frequenzbereich) bei 868 Megahertz in Europa und 915 MHz in Nordamerika betrieben. 
 
-Viele **Internet of Things Anwendungen** (bspw. für Straßenbeleuchtung, Wetterstationen, etc.) und deren dazugehörigen Sensorknoten nutzen bereits seit Anfang der 2000er das LoRaWAN zur Datenübertragung. Die Nutzung ist kostenlos und kann sehr einfach über eine eigene, persönliche Applikation auf [**The Things Network**](https://www.thethingsnetwork.org/) verwaltet werden. Dazu aber später mehr.  
+Viele **Internet of Things Anwendungen** (bspw. für Straßenbeleuchtung, Wetterstationen, etc.) und deren dazugehörigen Sensorknoten nutzen bereits seit der Erfindung im Jahr 2007 das LoRaWAN zur Datenübertragung. Die Nutzung ist kostenlos und kann sehr einfach über eine eigene, persönliche Applikation auf [**The Things Network**](https://www.thethingsnetwork.org/) verwaltet werden. Dazu aber später mehr.  
 
 Der Aufbau des LoRaWAN ist recht simpel (siehe nachfolgendes Image). Wobei gilt:
 * Endnode == unser GPS-Tracker
@@ -80,7 +80,43 @@ im Zusammenspiel mit unserem Code nicht funktioniert:
 <img align="left" position="inline" width="75%" border="1" src="images/GPSTracker/TTN_Settings2.png">
 
 
-Sobald das Device einmal registriert ist, können die nötigen **drei Variablen, die im Sketch ergänzt werden müssen**, ausgelesen werden. Der Sketch befindet sich ebenfalls hier in diesem Repository im Ordner "sketches".
+Sobald das Device einmal registriert ist, können die nötigen **drei Variablen, die im Sketch ergänzt werden müssen**, ausgelesen werden. Der Sketch befindet sich ebenfalls hier in diesem Repository im Ordner "sketches". Folgende Zeilen müssen angepasst werden:
+
+```js
+//*** Werte bekommt Ihr aus der TTN-Console, Format msb! ***
+static u1_t NWKSKEY[16] = {
+    0xB2, 0x5F, 0x35, 0x64, 0xB4, 0x89, 0xB8, 0x09, 0x08, 0x12, 0x7D, 0xAC, 0x0F, 0xC6, 0xF1, 0x5C
+    }; 
+    
+static u1_t APPSKEY[16] = {
+    0xB2, 0x5B, 0x16, 0x81, 0x53, 0x70, 0x49, 0xBF, 0x24, 0xBD, 0x55, 0xB2, 0xB5, 0xF6, 0xCB, 0x46
+    }; 
+
+// ACHTUNG: DEVICE ADRESSE MIT PRÄFIX 0x
+// *** Wert bekomt Ihr aus der TTN-Console,Format hex-Style! ***
+static const u4_t DEVADDR = 0X26011BF4
+```
+
+Ebenso sollte vor Upload des Sketches das Pinmapping der Dragino LoRa Bee überprüft werden. Gemäß unserem Schaltplan ergibt sich folgendes Pinmapping:
+
+```js
+const lmic_pinmap lmic_pins = {
+    .nss = 10,
+    .rxtx = LMIC_UNUSED_PIN,
+    .rst = 9,
+    .dio = {2, 6, 7},
+    };
+```
+
+Das Pinmapping muss nur dann angepasst werden, wenn ihr von unserem Schaltplan abweicht.
+
+**Last but not least** muss der Skethch nun noch auf den Arduino Nano übertragen werden. Dazu am besten vorher einmal auf **Verify** (Haken oben links in der IDE) klicken und den Code kompilieren. Wenn keine Fehlermeldung erscheint, dann kann der Sketch direkt mit klick auf **Upload** auf das Board geladen werden. Fertig!
+
+**Hinweis:** Sollte eine Fehlermeldung beim Upload erscheinen, empfiehlt es sich die Einstellungen des Ports (hier: USB), des verwendeten Boards (hier: Arduino Nano) und des Prozessors (hier: ATmega328P ((Old Bootloader), weil kein original Arduino sondern, "nur" Clone) zu überprüfen.
+
+Für Anregungen, Hinweise, Tipps & Tricks sind wir offen und dankbar. Ansonsten: happy coding! :)
+
+
 
 
 
