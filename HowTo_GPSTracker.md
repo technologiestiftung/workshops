@@ -18,10 +18,14 @@ Nachfolgend soll das Setup von Version 1 beschrieben werden.
 
 #### Hardware
 Welche Hardware man für diese Version benötigt:
-* Arduino Nano à 20€ (Bestellung [HIER](https://store.arduino.cc/arduino-nano) möglich)
-* NEO 6M GPS-Modul à 8€ (Bestellung [HIER](https://www.az-delivery.de/products/neo-6m-gps-modul?ls=de&cache=false) möglich)
-* 0.96" I2C OLED-Display  à 5€ (Bestellung [HIER](https://www.az-delivery.de/products/0-96zolldisplay?_pos=3&_sid=10138dee5&_ss=r&ls=de) möglich)
-* ein paar Kabel à 3€ (Bestellun[HIER](https://www.az-delivery.de/products/3er-set-40-stk-jumper-wire-m2m-f2m-f2f?_pos=1&_sid=88ced2339&_ss=r&ls=de) möglich)
+* Arduino Nano à 20€
+* NEO 6M GPS-Modul à 8€ 
+* 0.96" I2C OLED-Display  à 5€ 
+* ein paar Kabel à 3€ 
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
 
 Der Gesamtpreis für die Hardware für GPS-Tracker Version 1 liegt damit bei **36 Euro**. Möchte man ein paar Euros sparen, kann man auch den Arduino Nano inkl. Mini-USB Kabel (benötigt man, um das Setch auf das Board zu übertragen) auch "nicht original" für nur 5 Euro bestellen ([HIER](https://www.az-delivery.de/products/nano-v3-0-pro?ls=de)). Funktioniert für uns genau so gut.
 
@@ -51,8 +55,9 @@ Die dtostrf-Funktion erklärt: https://www.mikrocontroller.net/topic/86391
 
 Das OLED-Display wird über die Adafruit GFX Grpahics Library angesteuert und kann dadurch beliebig strukturiert und gestaltet werden. Dabei sind der Kreativität keine Grenzen gesetzt.
 
-<img align="right" height="280px" src="images/GPSTracker/OLED_Triangle.jpg">
-<img position="inline" height="280px" src="images/GPSTracker/OLED_Stripes.jpg">
+<img align="left" height="30%" src="images/GPSTracker/OLED_Triangle.jpg">
+
+<img position="inline" height="30%" src="images/GPSTracker/OLED_Stripes.jpg">
 
 Ausführliches Erläuterungen zu den einzelen Funktionen der Library findet Ihr hier: [im offiziellen Library Guide](https://learn.adafruit.com/adafruit-gfx-graphics-library?view=all). Darin wird u.a. erklärt, wie man Schriftfarbe, -Größe, und -Anordnung definiert und wie die Funktionen und deren Parameterübergabe prinzipiell genutzt werden können. 
 
@@ -68,17 +73,20 @@ Wer erst einmal nur mit dem Display warm werden möchte, der kann dieses auch ei
 
 #### Hardware
 Welche Hardware man für diese version benötigt:
-* Arduino Uno Rev3 à 20€ (Bestellung [HIER](https://store.arduino.cc/arduino-uno-rev3) möglich)
-* Dragino LoRa/GPS-Shield mit LoRa Bee à 34€ (Bestellung [HIER](https://www.exp-tech.de/module/wireless/funk/7767/dragino-lora/gps-shield-915) möglich)
-* ein paar Kabel à 3€ (Bestellung [HIER](https://www.az-delivery.de/products/3er-set-40-stk-jumper-wire-m2m-f2m-f2f?_pos=1&_sid=88ced2339&_ss=r&ls=de) möglich)
+* Arduino Uno Rev3 à 20€
+* Dragino LoRa/GPS-Shield mit LoRa Bee à 34€
+* ein paar Kabel à 3€
 
 Der Gesamtpreis für die Hardware für GPS-Tracker Version 1 liegt damit bei **57 Euro**. Zugegeben, das klingt jetzt erst mal nach viel Geld. Für einen einfach, frustrfreien Einstieg in die LoRaWan-Tehmatik ist das Shield von Dragino jedoch sehr gut geeignet. Es kombiniert GPS-Modul + Antenne (sandfarbener Würfel) und LoRa Bee + Antenne (weißer Stab) und wird einfach auf den Arduino Uno aufsgeteckt. Man kann das Shield natürlich auch für weniger Geld aus den Eizelteilen nachbauen oedr gar LoRa-Modul und GPS-Modul einzeln mit den Arduino verkabeln. Diese Vorgehensweise beleuchten wir allerdings nicht.
 
 #### Verkabelung
-<img align="right" height="300" src="images/GPSTracker/Arduino_LoRa.png">
+<img align="right" margin-left="20" width="56%" src="images/GPSTracker/Arduino_LoRa.png">
 
 Zur Verkabelung mit dem Arduino Uno benötigen wir lediglich zwei Kabel.  
 **Wichtig**: die Jumper von RX (Receive) und TX (Transmitter) müssen entfernt werden, damit ein Signal übertragen werden kann.
+
+&nbsp;
+&nbsp;
 
 #### Libraries
 * https://github.com/mikalhart/TinyGPS/releases/tag/v13 

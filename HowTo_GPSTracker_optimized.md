@@ -10,21 +10,21 @@ Nach einem erfolgreichen ersten Workshop zum Thema LoRa und GPS haben wir uns ku
 <img align="right" width="400px" src="images/GPSTracker/Nano_Xbee_Image.jpg">
 
 Für die, nennen wir sie mal "Master-Version", benötigen wir die folgenden Hardware-Komponenten:
-* 9V Batterien + Ladegerät (Bestellung [HIER](https://www.amazon.de/Ladeger%C3%A4t-Keenstone-aufladbare-Batterien-USB-Ladekabel-6-St-3-Slots-Ladegeraet/dp/B07BRKJV3J/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=9+volt+batterie+800mAh+keenstone&qid=1568196073&s=computers&sr=8-2) möglich)
+* 9V Batterien + Ladegerät 
 
-* Battericlip (Bestellung [HIER](https://www.amazon.de/KEESIN-Batterieknopf-2-1x5-5mm-Netzstecker-Batteriehalter/dp/B06Y41ZRVJ/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=batterieclips&qid=1568195706&s=computers&sr=1-4) möglich)
+* Battericlip
 
-* GPS-Modul mit Antenne (Bestellung [HIER](https://www.az-delivery.de/products/neo-6m-gps-modul?_pos=3&_sid=1c09a6176&_ss=r&ls=de) möglich)
+* GPS-Modul mit Antenne
 
-* Arduino Nano (Bestellung [HIER](https://www.amazon.de/AZDelivery-Atmega328-gratis-Arduino-kompatibel/dp/B078S8BJ8T/ref=sr_1_9?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=arduino+nano&qid=1568196529&s=ce-de&sr=1-9) möglich)
+* Arduino Nano 
 
-* LoRa Bee (Bestellung [HIER](https://www.exp-tech.de/module/wireless/funk/7769/dragino-lora-bee-868) möglich)
+* LoRa Bee
 
 Zusammengerechnet kommen wir pro Tracker auf Kosten von 30€ und liegen damit weit unter dem Preis der gängigen GPS-Tracker (mit SIM-Karte), die i.d.R. bei 50€ anfangen.  
 
 **Nice-To-Know:** der uns preiswerteste, bekannte GPS-Tracker (mit LoRaWAN) liegt bei 85€.
 
-<img align="right" width="80px" position="inline" margin-bottom="10px" src="images/GPSTracker/TTN_logo.png">
+<!-- <img align="right" width="80px" position="inline" margin-bottom="10px" src="images/GPSTracker/TTN_logo.png"> -->
 
 
 #### Verkabelung
