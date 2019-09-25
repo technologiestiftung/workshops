@@ -1,7 +1,7 @@
 <img align="right" width="260" src="images/citylab-logo-2160x550.jpg">
 
 &nbsp;
-# Die Workshops im CityLAB Berlin
+# Offene Werkstatt im CityLAB Berlin
 Die **Technologiestiftung** veranstaltet regelmäßige Workshops im **CityLAB Berlin** im ehemaligen Offizierskasino des **Flughafen Tempelhof'**. Die Termine für die sog. **Offene Werkstatt** stehen auf der [CityLAB-Website]:(https://www.citylab-berlin.org/)
 
 ### In diesem Repository findet ihr:
