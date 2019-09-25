@@ -2,7 +2,7 @@
 
 &nbsp;
 # Die Workshops im CityLAB Berlin
-Die **Technologiestiftung Berlin** veranstaltet unter der Leitung des **CityLAB Berlin** in regelmäßigen Abständen Workshops im ehemaligen Offizierskasino des **Flughafen Tempelhof'**. Die Termine für die sog. **Offene Werkstatt** können hier eingesehen werden: [CityLAB Microsite](https://www.citylab-berlin.org/)
+Die **Technologiestiftung** veranstaltet regelmäßige Workshops im **CityLAB Berlin** im ehemaligen Offizierskasino des **Flughafen Tempelhof'**. Die Termine für die sog. **Offene Werkstatt** stehen auf der [CityLAB-Website]:(https://www.citylab-berlin.org/)
 
 ### In diesem Repository findet ihr:
 * HOW TO Anleitungen zu den einzelnen Workshops
