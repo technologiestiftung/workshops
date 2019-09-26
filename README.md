@@ -1,4 +1,5 @@
-<!-- <img align="right" width="260" src="images/citylab-logo-2160x550.jpg"> -->
+<img align="right" width="260" src="images/citylab-logo-2160x550.jpg">
+<img align="left" width="260" src="images/logo-technologiestiftung.jpg">
 
 &nbsp;
 # Offene Werkstatt im CityLAB Berlin
@@ -8,14 +9,12 @@ Die **Technologiestiftung** veranstaltet regelmäßige Workshops im **CityLAB Be
 * HOW TO Anleitungen zu den einzelnen Workshops
 * Programmcodes zu den Workshops
 * Images zu den Workshops
-* weiterführende Materialien
 
 In den **HOW TOs** findet ihr eine ausführliche Anleitun zu den jeweiligen Workshops mit entsprechenden Bildern und verlinkungen zu Codes, Libaries, Anleitungen und weiterführenden Input. 
 
 &nbsp;
 <img align="center" width="100%" src="images/Werkstatt_Platzhalter.jpg">
 
-&nbsp;
 &nbsp;
 ## Übersicht aller vergangenen Workshops im CityLAB
 
